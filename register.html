@@ -15,40 +15,41 @@
             <form>
                 <div class="register-section">
                     <div class="register">
-                        <input type="text" id="fname" placeholder="First name">
+                        <input type="text" id="fname" placeholder="First name"  name="firstname" required>
                     </div>
                     <br/>
                     <div class="register">
-                        <input type="text" id="lname" placeholder="Last name">
+                        <input type="text" id="lname" placeholder="Last name" name="lastname" required>
                     </div>
                     <br/>
                     <div class="register">
-                        <textarea id="address" name="address" placeholder="Enter your address"></textarea>
+                        <textarea id="address" name="address" placeholder="Enter your address" name="address" required></textarea>
                     </div>
                     <br/>
                     <div class="register">
-                        <input type="date" id="dob" name="date" placeholder="DOB">
+                        <input type="date" id="dob" name="date" placeholder="DOB" name="dob" required>
                     </div>
                     <br/>
                     <div class="register">
-                        <input type="tel" id="mobile" name="mobile" placeholder="Phone number">
+                        <input type="tel" id="mobile" name="mobile" placeholder="Phone number" name="mobile" required>
                     </div>
                     <br/>
                     <div class="register">
-                        <input type="email" id="email"  placeholder="Email address">
+                        <input type="email" id="email"  placeholder="Email address" name="email" required>
                     </div>
                     <br/>
                     <div class="register">
-                        <input type="text" id="uname"  placeholder="User name">
+                        <input type="text" id="uname"  placeholder="User name" name="username" required>
                     </div>
                     <br/>
                     <div class="register">
-                        <input type="password" id="password"  placeholder="Password">
+                        <input type="password" id="password"  placeholder="Password" name="password" minlength="8" required>
                     </div>
                     <br/>
                     <div class="register">
-                        <input type="password" id="confirm"  placeholder="Confirm password">
+                        <input type="password" id="confirm"  placeholder="Confirm password" name="cpassword" minlength="8" required>
                     </div>
+                    <div class="alert-danger" id="cpass-error"></div>
                     <br/>
                     <div class="register">
                         <input type="checkbox" id="agree" name="agree" value="yes">
@@ -62,5 +63,6 @@
             </form>
             
         </div>
+        <script src="scripts/register.js"></script>
     </body>
 </html>

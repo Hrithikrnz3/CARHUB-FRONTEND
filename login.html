@@ -12,33 +12,29 @@
           </div>
        <div class="container">
         <div class="login-section" >
-            <form >
+            <h3 id="login-text">Login</h3>
+            <form id="loginform" name="loginform" action="booking.html">
                 <div class="login">
-                    <input type="email" placeholder="Email address" id="email"/>
+                    <input type="email" placeholder="Email address" id="email" name="email" required/>
                 </div>
+                <div class="alert-danger" id="error-messages"></div>
                 <br/>
                 <div class="login">
-                    <input type="password" placeholder="password" id="password" />
+                    <input type="password" placeholder="password" id="password" name="password" minlength='8' required  />
                 </div>
+                <div class="alert-danger" id="pass-error-messages"></div>
                 <br/>
-                <div class="mid-container">
-                    <div class="login" id="left">
-                        <input type="checkbox" id="checkbox">
-                        <label>Remember Me</label>
-                    </div>
-                    <div class="login" id="right">
-                        <a href="#" id="forgot-password">Forgot Password?</a>
-                    </div>
-                </div>
+              
                 <br/>
-                <div class="login" id="signin">
-                    <a href="booking.html"><button type="button" id="signin">SIGN IN</button></a>
+                <div class="login">
+                    <button type="submit" id="signin">SIGN IN</button>
                 </div>
                 <div class="login">
-                    <p id="member">Not a memeber? <a href="register.html" id="register">Register</a></p>
+                    <p id="member">Not a member? <a href="register.html" id="register">Register</a></p>
                 </div>
             </form>
         </div>
        </div>
+       <script src="scripts/login.js"></script>
     </body>
 </html>

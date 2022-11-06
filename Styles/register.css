@@ -31,7 +31,7 @@ body{
 .register-section{
     background-color: white;
     margin-left: 400px;
-    margin-right: 410px;
+    margin-right: 390px;
     margin-top: 30px;
     padding-left: 25px;
     padding-top: 15px;
@@ -113,4 +113,8 @@ body{
     margin-left: 535px;
     font-weight: bold;
     font-size: 25px;
+}
+
+.alert-danger{
+    color: green;
 }

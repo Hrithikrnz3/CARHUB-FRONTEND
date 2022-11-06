@@ -4,18 +4,26 @@
         <link rel="stylesheet" href="Styles\booking.css" type="text/css"/>
     </head>
     <body background="booking.jpg">
+        <div class="nav">
+            <a class="active" href="#">CAB HUB</a>
+             <a href="#">Home</a>
+             <a href="#">Contact</a>
+             <a href="#">About</a>
+           </div>
         <div class="container">
             <div class="header">
                 <h2 >Book a city Taxi to your destination in town</h1>
             </div>
             <div class="mid-container">
+            <form>
                 <div id="pickup">
-                    <input type="text" id="pickup" placeholder="Pick-up location">
+                    <input type="text" id="pickup" placeholder="Pick-up location" name="pick-up">
                 </div>
                 <br/>
                 <div id="drop">
-                    <input type="text" id="drop" placeholder="Drop-off location">
+                    <input type="text" id="drop" placeholder="Drop-off location" name="drop">
                 </div>
+                <div class="alert-danger" id="location"></div>
                 <br/>
                 <div id="date">
                     <input type="date" id="date" placeholder="pick-up date">
@@ -32,7 +40,9 @@
                 <div id="search">
                     <button type="button" id="search">Search</button>
                 </div>
+            </form>    
             </div>
         </div>
+        <script src="scripts/booking.js"></script>
     </body>
 </html>
